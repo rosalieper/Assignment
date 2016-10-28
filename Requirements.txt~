@@ -1,0 +1,74 @@
+Requirements
+===============================================================
+1- A new automatic teller machine has been designed by Faculty of
+Engineering and Technology for Mami Amara and a program is needed
+to make the machine function properly. The machine sells fried eggs,
+bananas, beverages, plantain chips and cookies. You will write a program
+in java for the Mami Amara machine.
+The requirements for the program are:
+a) show the customer the different products sold by the Amara machine
+b) let the customer make the selection
+c) show the customer the cost of the item selected
+d) Accept the money from the customer
+e) Release the item
+The Amara machine has three main components: a built-in cash register,
+several dispensers to hold and release the products, and the Amara
+machine itself. The register has some cash on hand, it accepts the amount
+from the customer, and if the amount entered is more than the cost of the
+item, then—if possible—it returns the change. The cash register should
+also be able to show the Amara machine’s owner the amount of money in
+the register at any given time. The dispenser releases the selected item if
+it is not empty. It should show the number of items in the dispenser and
+the cost of the item.
+When the program executes, it must do the following:
+a) show the different products sold by the Amara machine
+b) get the selection
+c) if the selection is valid and the dispenser corresponding to the
+selection is not empty, sell the product.
+Furthermore, these instructions must be displayed after processing each
+selection (except when exiting the program), so that the user need not
+remember what to do if he or she wants to buy additional items. Once the
+user makes the appropriate selection, the Amara machine must act
+accordingly. If the user opts to buy an available product, the Amara
+machine should show the cost of the product and ask the user to deposit the
+money. If the money deposited is at least the cost of the item, the Amara
+machine should sell the item and display an appropriate message
+
+Analysis
+======================================================================
+
+Input:
+---------
+1- Choosen Product
+2- Amount of product
+3- Customer Money
+
+Output:
+----------
+1- Products for sale 
+2- Price of sellected product
+3- Products sold
+4- Balance if any
+
+Design
+=========================================================================
+
+step1:
+------
+	*Prompt the user to enter his selection
+	*Store the selection and display the price of the selected product
+	*Prompt the user to enter the amount of the product he needs
+Step2:
+------
+	*Check amount of product available if sufficient
+Step3:
+------
+	*If step3 is true, prompt the user to enter Cash
+	*If cash require change, check for sufficient ballance, if ok, give balance to user
+	*Dispence product
+Step4:
+------
+	*Go back to main menu
+
+Implementation
+============================================================================
